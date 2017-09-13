@@ -1,0 +1,157 @@
+* { margin: 0; padding: 0; }
+
+html, body { width: 100%; height: 100%; }
+
+body { position: relative; }
+
+.picture { width: 1200px; margin: 0 auto; }
+
+.hd .num { top: 45%; position: absolute; z-index: 3; right: 50%; transform: translate(-50%, -50%); }
+
+.hd .num li { background: red; height: 10px; width: 10px; border-radius: 5px; cursor: pointer; text-indent: -9999px; }
+
+.center { height: 455px; width: 1200px; background: #f7f7f7; overflow: hidden; margin: 0 auto; }
+
+.center .c_1 { width: 897px; margin: 0 auto; padding-top: 40px; }
+
+.center .c_1 a { float: left; position: relative; z-index: 1; -webkit-transition: all .2s linear; }
+
+.center .c_1 a img { display: block; }
+
+.center .c_1 a:hover { box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); transform: translate3d(0, -2px, 0); }
+
+.c_2 { padding-top: 8px; width: 896px; }
+
+.c_2 a { margin-left: 5px; }
+
+.tuijian { width: 1200px; height: 891px; margin: 0 auto; }
+
+.tuijian_title { height: 86px; line-height: 86px; text-align: center; font-size: 45px; color: #5a5a5a; font-weight: normal; }
+
+.tuijian_two { width: 1200px; height: 803px; border: 1px solid #d2d2d2; }
+
+.tuijian_two_f { width: 1200px; position: relative; list-style: none; }
+
+.tuijian_two_f1:first-child { height: 268px; width: 731px; padding-top: 56px; padding-left: 54px; border-right: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2; left: 0; top: 0; }
+
+a { color: #333; text-decoration: none; outline: none; }
+
+.tuijian_two_f1:first-child .tj_1 { width: 360px; margin: 0 auto; text-align: left; float: left; }
+
+.tuijian_two_f1:first-child .tj_1 h3 { font-size: 20px; text-align: left; line-height: 32px; height: 32px; font-weight: normal; }
+
+.tuijian_two_f1:first-child .tj_1 .tuijian_two_f2_title1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.tuijian_two_f1:first-child .tj_1 .tuijian_two_f2_div1 { font-size: 13px; line-height: 18px; margin-top: 18px; }
+
+.tuijian_two_f1:first-child .tj_1 .tuijian_two_f2_div1 em { color: #008299; margin-left: 2px; }
+
+em { font-style: normal; }
+
+.tuijian_two_f1:first-child .tj_1 p { height: 60px; line-height: 60px; color: #e6574f; font-size: 25px; }
+
+.tuijian_two_f1:first-child .tuijian_two_f3 { transform: translateX(100px); margin-top: 20px; }
+
+.tuijian_two_f3 img { width: 165px; margin: 0 auto; float: left; }
+
+.tuijian_two_f:first-child .share { position: absolute; left: 54px; bottom: 63px; }
+
+.share { border: 1px solid #e0e0e0; display: block; width: 70px; height: 27px; line-height: 27px; border-radius: 15px; background: url(../img/code.png) no-repeat 16px 8px; padding-left: 40px; font-size: 14px; color: #e21708; font-weight: bold; }
+
+.tuijian_two_f1:nth-child(2) { width: 372px; height: 470px; border-right: 1px solid #d2d2d2; position: absolute; left: 0; top: 325px; }
+
+.tuijian_two_f1:nth-child(2) .tj_2 { width: 300px; text-align: center; }
+
+.tuijian_two_f1:nth-child(2) .tj_2 h3 { font-size: 18px; line-height: 32px; height: 32px; font-weight: normal; margin-left: 32px; }
+
+.tuijian_two_f1:nth-child(2) .tj_2 .tuijian_two_f2_title1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.tuijian_two_f1:nth-child(2) .tj_2 .tuijian_two_f2_div1 { font-size: 13px; line-height: 18px; margin-top: 18px; margin-left: 79px; }
+
+.tuijian_two_f1:nth-child(2) .tj_2 .tuijian_two_f2_div1 em { color: #008299; margin-left: 2px; }
+
+em { font-style: normal; }
+
+.tuijian_two_f1:nth-child(2) .tj_2 p { height: 60px; line-height: 60px; color: #e6574f; font-size: 25px; margin-left: 43px; }
+
+.tuijian_two_f1:nth-child(2) .tuijian_two_f3 { transform: translateX(100px); margin-top: 100px; }
+
+.tuijian_two_f3 img { width: 165px; margin: 0 auto; }
+
+.tuijian_two_f1:nth-child(2) .share { position: absolute; left: 50%; top: 40%; margin-left: -56px; }
+
+.tuijian_two_f1:nth-child(3) { width: 412px; height: 218px; border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2; padding-top: 22px; left: 373px; top: 325px; position: absolute; }
+
+.tuijian_two_f1:nth-child(3) .tj_3 { width: 220px; margin: 0 auto; float: right; text-align: right; margin-right: 25px; }
+
+.tuijian_two_f1:nth-child(3) .tj_3 h3 { text-align: right; font-size: 20px; height: 32px; line-height: 32px; font-weight: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.tuijian_two_f1:nth-child(3) .tuijian_two_f2_div2 { font-size: 13px; line-height: 18px; margin-top: 18px; }
+
+.tuijian_two_f1:nth-child(3) .tuijian_two_f2_div2 em { color: #008299; margin-left: 2px; }
+
+.tuijian_two_f1:nth-child(3) .tj_3 p { height: 60px; line-height: 60px; color: #e6574f; font-size: 25px; }
+
+.tuijian_two_f1:nth-child(3) .tuijian_two_f4 { float: right; margin-top: -12px; }
+
+.tuijian_two_f4 img { width: 165px; margin: 0 auto; }
+
+.tuijian_two_f1:nth-child(3) .share { left: 50%; margin-left: -56px; bottom: 8%; }
+
+.tuijian_two_f1:nth-child(4) { width: 412px; height: 217px; border-right: 1px solid #d2d2d2; padding-top: 22px; left: 373px; top: 566px; position: absolute; }
+
+.tuijian_two_f1:nth-child(4) .tj_4 { width: 220px; margin: 0 auto; text-align: left; float: left; margin-left: 25px; }
+
+.tuijian_two_f1:nth-child(4) .tj_4 h3 { text-align: right; font-size: 20px; height: 32px; line-height: 32px; font-weight: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.tuijian_two_f1:nth-child(4) .tuijian_two_f2_div4 { font-size: 13px; line-height: 18px; margin-top: 18px; }
+
+.tuijian_two_f1:nth-child(4) .tuijian_two_f2_div4 em { color: #008299; margin-left: 2px; }
+
+.tuijian_two_f1:nth-child(4) .tj_4 p { height: 60px; line-height: 60px; color: #e6574f; font-size: 25px; }
+
+.tuijian_two_f1:nth-child(4) .tuijian_two_f4 { float: right; margin-top: -12px; }
+
+.tuijian_two_f5 img { width: 165px; margin: 0 auto; }
+
+.tuijian_two_f1:nth-child(4) .share { left: 50%; margin-left: -56px; bottom: 8%; }
+
+.tuijian_two_f1:nth-child(5) { width: 412px; height: 509px; border-bottom: 1px solid #d2d2d2; padding-top: 56px; position: absolute; right: 0; top: 0; }
+
+.tuijian_two_f1:nth-child(5) .tj_5 { width: 220px; margin: 0 auto; text-align: left; float: left; margin-left: 54px; }
+
+.tuijian_two_f1:nth-child(5) .tj_5 h3 { text-align: right; font-size: 20px; height: 32px; line-height: 32px; font-weight: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.tuijian_two_f1:nth-child(5) .tuijian_two_f2_div4 { font-size: 13px; line-height: 18px; margin-top: 18px; }
+
+.tuijian_two_f1:nth-child(5) .tuijian_two_f2_div4 em { color: #008299; margin-left: 2px; }
+
+.tuijian_two_f1:nth-child(5) .tj_5 p { height: 60px; line-height: 60px; color: #e6574f; font-size: 25px; }
+
+.tuijian_two_f1:nth-child(5) .tuijian_two_f6 { float: none; }
+
+.tuijian_two_f6 img { height: 165px; width: 165px; vertical-align: top; margin-left: 100px; }
+
+.tuijian_two_f1:nth-child(5) .share { left: 50%; margin-left: -56px; bottom: 8%; }
+
+.tuijian_two_f1:nth-child(6) { width: 412px; height: 217px; padding-top: 22px; position: absolute; right: 0; top: 565px; }
+
+.tuijian_two_f1:nth-child(6) .tj_6 { width: 220px; margin: 0 auto; text-align: left; float: left; margin-left: 25px; }
+
+.tuijian_two_f1:nth-child(6) .tj_6 h3 { font-size: 20px; text-align: left; line-height: 32px; height: 32px; font-weight: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.tuijian_two_f1:nth-child(6) .tuijian_two_f2_div5 { font-size: 13px; line-height: 18px; margin-top: 18px; }
+
+.tuijian_two_f1:nth-child(6) .tuijian_two_f2_div5 em { color: #008299; margin-left: 2px; }
+
+.tuijian_two_f1:nth-child(6) .tj_6 p { height: 60px; line-height: 60px; color: #e6574f; font-size: 25px; }
+
+.tuijian_two_f1:nth-child(6) .tuijian_two_f7 { width: 165px; margin: 0 auto; float: left; }
+
+.tuijian_two_f7 img { height: 165px; width: 165px; vertical-align: top; }
+
+.tuijian_two_f1:nth-child(6) .share { left: 50%; margin-left: -56px; bottom: 8%; }
+
+.main_footer { background: #f5f5f5; height: 83px; width: 100%; margin-top: 60px; }
+
+/*# sourceMappingURL=index2.css.map */

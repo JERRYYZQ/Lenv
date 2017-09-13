@@ -1,0 +1,74 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { width: 100%; height: 100%; }
+
+body { background-color: #f5f5f5; }
+
+.banner_1 { width: 1580px; height: 500px; overflow: hidden; margin: 0 auto; position: relative; }
+
+.innerbanner_1 { width: 6320px; height: 500px; }
+.innerbanner_1 div { float: left; }
+
+.banner_1 ul { list-style: none; z-index: 3; position: absolute; left: 11.5%; top: 87%; display: flex; background-color: black; opacity: 0.65; justify-content: space-around; line-height: 64px; width: 1212px; height: 64px; }
+
+.banner_1 ul li { width: 160px; height: 52px; color: white; text-align: center; }
+
+.span_l { z-index: 10; position: absolute; left: 40px; top: 196px; height: 70px; width: 40px; background: url(../lun2/btn_l.png) no-repeat 2px 10px; border-radius: 0 2px 2px 0; background-color: rgba(0, 0, 0, 0); display: none; }
+
+.span_r { z-index: 10; position: absolute; right: 0px; top: 196px; height: 70px; width: 40px; background: url(../lun2/btn_r.png) no-repeat 2px 10px; border-radius: 2px 0 0 2px; background-color: rgba(0, 0, 0, 0); display: none; }
+
+.banner_1 ul li:nth-child(1)::after { content: ""; position: absolute; bottom: 0; left: 90px; width: 10%; height: 5px; background-color: #fff; }
+
+.biji_lg { width: 1212px; margin: 0 auto; zoom: 1; height: 1300px; }
+
+.biji_lg_1 { width: 1212px; margin: 0 auto 20px; border-radius: 3px; overflow: hidden; }
+
+.biji_lg h6 { height: 84px; font-weight: normal; line-height: 84px; font-size: 24px; color: #0b0b0b; text-transform: uppercase; }
+
+a { text-decoration: none; }
+
+.biji_lg_1 img { display: block; width: 100%; }
+
+.biji_lg_2 { position: relative; width: 1232px; margin: -9px; zoom: 1; }
+
+.biji_lg_2 ul { list-style: none; font-size: 12px; zoom: 1; }
+
+.biji_lg_2 ul li { width: 596px; height: 392px; float: left; margin: 9px; display: list-item; text-align: -webkit-match-parent; border-radius: 3px; background-color: #fff; }
+
+.biji_lg_2 ul li img { border: none; vertical-align: top; }
+
+.biji_lg_2 ul li:hover { transition: all 1s; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); transform: translate3d(0, -2px, 0); }
+
+.biji_lg_first { width: 1212px; margin: 0 auto; zoom: 1; height: 550px; }
+
+.biji_lg_first h6 { height: 84px; font-weight: normal; line-height: 84px; font-size: 24px; color: #0b0b0b; text-transform: uppercase; }
+
+.biji_lg_first .biji_lg_2 { width: 800px; height: 392px; float: left; margin-bottom: 18px; border-radius: 3px; overflow: hidden; }
+
+.biji_lg_first .biji_lg_3 { width: 392px; height: 392px; float: left; margin: 0 0 18px 18px; overflow: hidden; transition: all .4s; border-radius: 3px; background-color: #fff; margin-top: -10px; }
+
+.biji_lg_first .biji_lg_3 img { display: block; width: 240px; height: 240px; border: none; vertical-align: top; margin-left: 69px; }
+
+.biji_lg_first .biji_lg_3 h6 { line-height: 40px; font-size: 24px; color: #434343; font-weight: normal; padding: 0 40px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.biji_lg_first .biji_lg_3 p { line-height: 24px; font-size: 14px; color: #7c7c7c; margin-left: 41px; }
+
+.biji_lg_first .biji_lg_3 p strong { line-height: 40px; font-size: 30px; color: #ed4a39; }
+
+.biji_lg_3:hover { transition: all .4s; border-radius: 3px; background-color: #fff; box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3); transform: translate3d(0, -2px, 0); }
+
+.biji_lg_second { width: 1230px; margin: 0 auto; }
+
+.biji_lg_second .biji_lg_3 { width: 392px; height: 392px; margin: 0 0 18px 18px; overflow: hidden; margin-top: 75px; transition: all .4s; border-radius: 3px; background-color: #fff; float: left; }
+
+.biji_lg_second .biji_lg_3 img { display: block; width: 240px; height: 240px; border: none; vertical-align: top; margin-left: 69px; }
+
+.biji_lg_second .biji_lg_3 h6 { line-height: 40px; font-size: 24px; color: #434343; font-weight: normal; padding: 0 40px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.biji_lg_second .biji_lg_3 p { line-height: 24px; font-size: 14px; color: #7c7c7c; }
+
+.biji_lg_second .biji_lg_3 p strong { line-height: 40px; font-size: 30px; color: #ed4a39; }
+
+.biji_lg_3:hover { transition: all .4s; border-radius: 3px; background-color: #fff; box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3); transform: translate3d(0, -2px, 0); }
+
+/*# sourceMappingURL=lun2.css.map */

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#login{
+				width: 100%;
+				height: 100vh;
+				position: absolute;
+				background: #ccc;
+				opacity: 0.6;
+				z-index: 9999;
+			}
+			#ind{
+				margin-left: 50%;
+			}
+/*
+			#user-name{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				margin-top: -30px;
+			}
+			#pass-word{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				margin-top: -10px;
+			}
+            #adduser,#admin{
+            	position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				margin-top: 10px;
+            }
+            #adduser{
+            	margin-left: 25px;
+            }
+            #admin{
+            	margin-left: -25px;
+            }*/
+            .md{
+            	position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+            }
+		</style>
+	</head>
+	<body>
+		<div id='login'>
+			<div class="md">
+				用户名：<input type="text" id="user-name"/>
+				用户密码：<input type="password" id="pass-word"/>
+				<button id="admin">登录</button>
+				<button id="adduser">注册</button><br/>
+				<button id="ind">返回主页</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script>
+			$(function(){
+				
+			
+			var db = openDatabase("login", "1.0", "学生表", 1024 * 1024, function () { });
+			createTable=function() {
+				db.transaction( function(tx) { 
+				tx.executeSql("create table if not exists login (username REAL UNIQUE,password TEXT)", [],
+//					function(tx,result){ alert('创建student表成功');},
+//					function(tx, error){ alert('创建student表失败:' + error.message);}
+				)
+				});
+			}
+			createTable();
+			//注册
+			insert = function () {
+				db.transaction(function (tx) {
+				tx.executeSql(
+				"insert into login (username,password) values(?, ?)",
+				[$('#user-name').val(),$('#pass-word').val()],
+					function () { alert('注册成功');$('#user-name').val(''),$('#pass-word').val('')},
+					function (tx, error) { alert('注册失败: ' + error.message); }
+				);
+				});
+			}
+				
+			$('#adduser').click(function(){
+			     insert();
+			})    
+			//登录
+			query = function () {
+				db.transaction(function (tx) {
+					tx.executeSql("select * from login where username=? and password=?", [$('#user-name').val(),$('#pass-word').val()],
+						function (tx, result) {
+							alert('登录成功');
+							$('#user-name').val(''),$('#pass-word').val('');
+							location='index.html';
+						},
+						function (tx, error) {alert('登录失败: ' + error.message);}
+					);
+				});
+				}
+			
+			
+			
+			
+			
+			
+			$('#admin').click(function(){
+				query()
+			})
+			
+			$('#ind').click(function(){
+				location='index.html';
+			})
+			})
+		</script>
+	</body>
+</html>
